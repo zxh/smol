@@ -1,7 +1,8 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a>.
-	{{- range .Site.Menus.footer }}
-	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
+    <p>&copy; 2020-{{ now.Year }} <a
+                href="{{ .Site.BaseURL }}?_s=ft"><b>{{ if .Site.Copyright }}{{ .Site.Copyright }}{{ else }}{{ .Site.Title }}{{ end }}</b></a> ARR.
+        {{- range .Site.Menus.footer }}
+            <a href="{{ .URL }}" target="_blank"><b>{{ .Name }}</b></a>.
         {{- end }}
-	</p>
+    </p>
 </footer>
